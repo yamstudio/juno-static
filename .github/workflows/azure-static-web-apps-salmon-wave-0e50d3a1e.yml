@@ -23,6 +23,7 @@ jobs:
         with:
           node-version: 18.x
           cache: 'yarn'
+      - run: yarn install
       - run: yarn build
       - run: cp public/index.html dist/
       - name: Build and Deploy
